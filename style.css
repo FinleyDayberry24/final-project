@@ -1,0 +1,58 @@
+:root{
+    --blue: #1d72d9;
+    --border: #c8c8c8;
+    --text: #333;
+    --radius: 6px;
+    --form-max-width: 800px;
+
+}
+header{
+    color: rgb(41, 114, 223);
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#cone{
+    color: #FF5F05;
+    width: 32px;
+    height: 32px;
+}
+.pass-info{
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 8px;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form-group label{
+    white-space: nowrap;
+}
+input, select{
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    min-width: 50px;
+    padding-right: 40px;
+}
+label{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+

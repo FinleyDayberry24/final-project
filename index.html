@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rideshare Request</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<header>
+    <i class="bi bi-cone-striped cone" id="cone"></i>
+    <h1 class="header">Rideshare Request</h1>
+</header>
+<body>
+    <div class="pass-info">
+      
+        <div class="form-group">
+            <label for="passenger-name">Passenger's Name</label>
+            <input type="text" id="passenger-name" placeholder="Last Name" autocomplete="off" name="passenger-name">
+        </div>
+        <div class="form-group">
+            <label for="rider-count"> # of Rider's</label>
+            <input type="number" id="rider-count" name="rider-count" min="1" max="15" value="1" placeholder="How many Riders">
+        </div>
+        <div class="form-group">
+            <label for="transportation">Mode of Transportation</label>
+            <select name="transportation" id="transportation">
+                <option selected>Select one</option>
+                <option value="plane">Plane</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+                <option value="automobile">Automobile</option>
+            </select>
+        </div>
+        
+    </div>
+</body>
+</html>
