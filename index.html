@@ -38,6 +38,20 @@
 </div>
 </form>
 <div id="tickets-container"></div>
-
+<div class="hse-transport">
+    <h3 class="mode-title">Add a New Mode of Transportation</h3>
+    <label for="new-mode new-mode-label">Mode of Transportation:</label>
+    <input type="text" id="new-mode" name="new-mode" placeholder="Please enter a value.">
+    <button id="save-btn" class="save-btn"><i class="bi bi-floppy"></i>SAVE</button>
+    <button id="cancel-btn" class="cancel-btn"><i class="bi bi-x-circle"></i>CANCEL</button>
+</div>
+    <div class="hse-transport" style="display:none; margin: 20px auto; max-width:400px; gap:8px;">
+        <label for="new-mode-input">Add new mode</label>
+        <input type="text" id="new-mode-input" placeholder="Enter mode (e.g., scooter)" />
+        <div>
+            <button id="save-btn">Save</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+    </div>
 </body>
 </html>
