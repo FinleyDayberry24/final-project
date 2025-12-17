@@ -22,22 +22,18 @@ header{
 }
 .pass-info{
     border: 4px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
     margin: 20px auto;
-    gap: 20px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
+    padding: 100px 20px;
     border-radius: 8px;
+    align-items: center;
+    justify-items: center;
+    max-width: 800px;
 }
 .form-group{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: contents;
 }
 .form-group label{
     white-space: nowrap;
@@ -47,23 +43,69 @@ input, select{
     font-size: 14px;
     border: 2px solid var(--border);
     border-radius: var(--radius);
-    min-width: 50px;
-    padding-right: 40px;
+    width: 90%;
+    box-sizing: border-box;
 }
 label{
     font-size: 14px;
-    margin-bottom: 6px;
-    display: flex;
 }
 .submit-btn{
     background-color: var(--blue);
     color: rgb(250, 234, 5);
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     border-radius: var(--radius);
     cursor: pointer;
     margin-top: 20px;
+    grid-column: 2;
+    justify-self: end; 
+    width: 40%;
+    box-sizing: border-box;
+
+        margin-right: 35px;
 }
 
-
+ .ticket{
+    border: 2px solid yellow;
+   padding: 1rem;
+   margin-top: 1rem;
+   border-radius: 8px;
+   background-color: white;
+   text-align: center;
+   width: 300px;
+   box-sizing: border-box;
+} 
+.ticket-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.ticket-icon{
+    font-size: 2rem;
+    color: var(--blue);
+}
+.ticket h2{
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+.ticket p{
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+.ticket-actions{
+    display: flex;
+    justify-content: space-between;
+}
+.ticket-actions i{
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+#tickets-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

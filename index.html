@@ -13,15 +13,15 @@
     <h1 class="header">Rideshare Request</h1>
 </header>
 <body>
-    <div class="pass-info">
-      
+   <form id="request-form">
+      <div class="pass-info">
         <div class="form-group">
             <label for="passenger-name">Passenger's Name</label>
             <input type="text" id="passenger-name" placeholder="Last Name" autocomplete="off" name="passenger-name">
         </div>
         <div class="form-group">
             <label for="rider-count"> # of Rider's</label>
-            <input type="number" id="rider-count" name="rider-count" min="1" max="15" value="1" placeholder="How many Riders">
+            <input type="number" id="riders" name="rider-count" min="1" max="15" value="1" placeholder="How many Riders">
         </div>
         <div class="form-group">
             <label for="transportation">Mode of Transportation</label>
@@ -35,5 +35,9 @@
         </div>
         <button type="submit" class="submit-btn"> Submit Request</button>
     </div>
+</div>
+</form>
+<div id="tickets-container"></div>
+
 </body>
 </html>
