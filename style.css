@@ -71,7 +71,13 @@ label{
    padding: 1rem;
    margin-top: 1rem;
    border-radius: 8px;
-   background-color: white;
+   background-image: linear-gradient(
+        rgba(255, 255, 255, 0.82),
+        rgba(255, 255, 255, 0.82)
+    ), url("peter.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
    text-align: center;
    width: 300px;
    box-sizing: border-box;
